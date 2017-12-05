@@ -1,39 +1,15 @@
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-class MainTest {
-    @Test
-    fun testFoo() {
-        assertEquals(10, foo())
+
+class MainTest{
+    fun Test0(){
+        var e : MutableList<Pair<Int, Int>> = MutableList<Pair<Int, Int>>();
+        e.add(Pair(1,2));
+        e.add(Pair(1,3));
+        var q : MutableList<Pair<Int, Int>> = MutableList<Pair<Int, Int>>();
+        q.add(2,3);
+        Answer(q);
     }
 
-    @Test
-    fun testSumEmpty() {
-        assertEquals(0, sum())
-    }
-
-    @Test
-    fun testSumSingle() {
-        assertEquals(42, sum(42))
-    }
-
-    @Test
-    fun testSumMany() {
-        assertEquals(6, sum(1, 2, 3))
-    }
-
-    @Test
-    fun testSumFunEmpty() {
-        assertEquals(0, sumFun())
-    }
-
-    @Test
-    fun testSumFunSingle() {
-        assertEquals(42, sumFun(42))
-    }
-
-    @Test
-    fun testSumFunMany() {
-        assertEquals(6, sumFun(1, 2, 3))
-    }
 }
